@@ -27,58 +27,69 @@
 <body class="@yield('body-class')">
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-translate">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ url('/') }}">Góndola Virtual</a>
+                <a class="navbar-brand" href="{{ url('/') }}">
+                Inicio </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             </div>
-
-            <div class="collapse navbar-collapse" id="navigation-example">
-                <ul class="nav navbar-nav navbar-right">
-                    @guest
-                        <li><a href="{{ route('login') }}">Ingresar</a></li>
-                        <li><a href="{{ route('register') }}">Registro</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                @guest
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                            <i class="material-icons">apps</i> Sesion
+                        </a>
+                        <div class="dropdown-menu dropdown-with-icons">
+                            <a href="{{ route('login') }}" class="dropdown-item">
+                            <i class="material-icons">layers</i> Ingresar
                             </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="{{ url('/home') }}">Carrito de compras</a>
-                                </li>
-                                @if (auth()->user()->admin)
-                                <li>
-                                    <a href="{{ url('/admin/categories') }}">Gestionar categorías</a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/admin/products') }}">Gestionar productos</a>
-                                </li>
-                                @endif
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                        Cerrar sesión
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                    @endguest
-                </ul>
+                            <a href="{{ route('register') }}" class="dropdown-item">
+                            <i class="material-icons">content_paste</i> Resgistro
+                            </a>
+                        </div>
+                    </li>
+                @else
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+                
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="{{ url('/home') }}">Carrito de compras</a>
+                            </li>
+                            @if (auth()->user()->admin)
+                            <li>
+                                <a href="{{ url('/admin/categories') }}">Gestionar categorías</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/admin/products') }}">Gestionar productos</a>
+                            </li>
+                            @endif
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                    Cerrar Sesión
+                                </a>
+                
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @endguest            
+            </ul>
             </div>
         </div>
     </nav>
+
 
     <div class="wrapper">
         @yield('content')
