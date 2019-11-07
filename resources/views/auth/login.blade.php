@@ -9,8 +9,10 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
           <div class="card card-login">
+
             <form class="form" method="POST" action="{{ route('login') }}">
-                    {{ csrf_field() }}
+              @csrf
+
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Inicio de sesión</h4>
               </div>
@@ -21,10 +23,10 @@
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="material-icons">face</i>
+                      <i class="material-icons">mail</i>
                     </span>
                   </div>
-                  <input id="username" type="text" placeholder="Username" class="form-control" name="username" value="{{ old('username') }}" required autofocus>                  
+                  <input id="email" type="email" placeholder="Correo" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" required autofocus>
                 </div>
 
 
@@ -35,12 +37,12 @@
                       <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-                    <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required />
+                    <input placeholder="Contraseña" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                   </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input  class="form-check-input" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>                    
+                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>                
                         Recordar sesión
                         <span class="form-check-sign">
                             <span class="check"></span>
