@@ -9,6 +9,11 @@
         h1.title {
             font-size: 3rem;
         }
+        div.section.section-contacts {
+            background-color: #efffff;
+            border: 1px solid transparent;
+            border-radius: 18%;
+        }
         .team .row .col-md-4 {
             margin-bottom: 5em;
         }
@@ -71,7 +76,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{ asset('/img/logo.png') }}" alt="Eventos La Garrita" width="300">
+                <img src="{{ asset('/img/logo.png') }}" alt="Eventos La Garrita" width="100">
                 <h1 class="title">Bienvenido a {{ config('app.name') }}.</h1>
                 <h4>Quieres armar una buena peda en tu casa? La Garrita te ofrece lo necesario para tu evento social.</h4>
                 <br />
@@ -128,45 +133,44 @@
 
 
 
-
-        <div class="section landing-section">
+        <div class="section section-contacts">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 ml-auto mr-auto">
                     <h2 class="text-center title">¿No te has registrado?</h2>
-                    <h4 class="text-center description">Regístrate ingresando tus datos básicos, y podrás realizar tus pedidos, nuestro carrito te ayudará a listar todos los servicios que requieras en tu evento. Con tu cuenta de usuario podrás hacer todas tus consultas sin compromiso.</h4>
+                    <h4 class="text-center description">Regístrate ingresando tus datos básicos, y podrás realizar tus pedidos, nuestro carrito te ayudará a listar todos los servicios que requieras en tu evento. Ademas con tu cuenta de usuario podrás hacer todas tus consultas sin compromiso.</h4>
                     <form class="contact-form" method="get" action="{{ url('/register') }}">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group label-floating">
-                                    <label class="control-label">Nombre</label>
-                                    <input type="text" class="form-control" name="name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group label-floating">
-                                    <label class="control-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" name="email">
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="bmd-label-floating">Nombre</label>
+                            <input type="text" class="form-control" name="name">
                         </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="bmd-label-floating">Tu correo electrónico</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        </div>
+                    </div>
 
-                        <div class="form-group label-floating">
-                            <label class="control-label">Tu mensaje</label>
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
+                    <div class="form-group">
+                        <label for="exampleMessage" class="bmd-label-floating">Tu mensaje</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-4 text-center">
-                                <button class="btn btn-primary btn-raised">
-                                    Iniciar registro
-                                </button>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-4 ml-auto mr-auto text-center">
+                        <button class="btn btn-primary btn-raised">
+                            Iniciar registro
+                        </button>
                         </div>
+                    </div>
                     </form>
                 </div>
             </div>
-
         </div>
+
     </div>
 </div>
 

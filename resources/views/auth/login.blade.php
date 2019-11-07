@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('body-class', 'login-page')
+@section('body-class', 'login-page sidebar-collapse')
 
 @section('content')
 
@@ -11,40 +11,49 @@
           <div class="card card-login">
             <form class="form" method="POST" action="{{ route('login') }}">
                     {{ csrf_field() }}
+              <div class="card-header card-header-primary text-center">
+                <h4 class="card-title">Inicio de sesión</h4>
+              </div>
+              <p class="description text-center">Ingresa tus datos</p>
 
-                    <div class="header header-primary text-center">
-                        <h4>Inicio de sesión</h4>
-                    </div>
-                    <p class="text-divider">Ingresa tus datos</p>
-                    <div class="content">
+              <div class="card-body">
 
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <i class="material-icons">fingerprint</i>
-                            </span>
-                            <input id="username" type="text" placeholder="Username" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
-                        </div>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">face</i>
+                    </span>
+                  </div>
+                  <input id="username" type="text" placeholder="Username" class="form-control" name="username" value="{{ old('username') }}" required autofocus>                  
+                </div>
 
-                        <div class="input-group">
-                            <span class="input-group-addon">
-                                <i class="material-icons">lock_outline</i>
-                            </span>
-                            <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required />
-                        </div>
 
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
-                                Recordar sesión
-                            </label>
-                        </div>
-                    </div>
-                    <div class="footer text-center">
-                        <button type="submit" class="btn btn-simple btn-primary btn-lg">Ingresar</button>
-                    </div>
-                    <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
-                        Forgot Your Password?
-                    </a> -->
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="material-icons">lock_outline</i>
+                    </span>
+                  </div>
+                    <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required />
+                  </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input  class="form-check-input" type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>                    
+                        Recordar sesión
+                        <span class="form-check-sign">
+                            <span class="check"></span>
+                        </span>
+                    </label>
+                </div>
+
+              </div>
+
+
+              <div class="footer text-center">
+                <button type="submit" class="btn btn-simple btn-primary btn-lg">Ingresar</button>             
+              </div>
             </form>
           </div>
         </div>

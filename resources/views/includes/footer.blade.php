@@ -8,18 +8,13 @@
               </a>
             </li>
             <li>
-              <a href="https://creative-tim.com/presentation">
-                About Us
+              <a href="#">
+                Acerca de 
               </a>
             </li>
             <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license">
-                Licenses
+              <a href="#">
+                Publicaciones
               </a>
             </li>
           </ul>
@@ -28,8 +23,9 @@
           &copy;
           <script>
             document.write(new Date().getFullYear())
-          </script>, made with <i class="material-icons">favorite</i> by
-          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          </script>, plantilla desarrollada por
+          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>, y cambiada para su uso por 
+          <a href="https://www.facebook.com/andresalvaro.justinianoh" target="_blank">Andres Justiniano</a>.
         </div>
       </div>
     </footer>

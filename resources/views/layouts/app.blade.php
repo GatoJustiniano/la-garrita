@@ -46,10 +46,10 @@
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
                             <a href="{{ route('login') }}" class="dropdown-item">
-                            <i class="material-icons">layers</i> Ingresar
+                            <i class="material-icons">person</i> Ingresar
                             </a>
                             <a href="{{ route('register') }}" class="dropdown-item">
-                            <i class="material-icons">content_paste</i> Resgistro
+                            <i class="material-icons">person_outline</i> Registrarme
                             </a>
                         </div>
                     </li>
