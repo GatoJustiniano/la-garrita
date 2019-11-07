@@ -20,7 +20,7 @@
             @endif
 
             <form class="form" method="POST" action="{{ route('register') }}">
-                    {{ csrf_field() }}
+                @csrf
 
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Registro</h4>
@@ -100,7 +100,7 @@
 
 
               <div class="card text-center">
-                <button type="submit" class="btn btn-simple btn-primary btn-sm">Confirmar Registro</button>             
+                <button type="submit" class="btn btn-simple btn-primary btn-lg">Confirmar Registro</button>             
               </div>
               
             </form>
