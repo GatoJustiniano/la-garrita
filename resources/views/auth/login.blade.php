@@ -2,6 +2,20 @@
 
 @section('body-class', 'login-page sidebar-collapse')
 
+@section('styles')
+    <style>
+      @media (min-width: 992px) {
+        .page-header > div:nth-child(1){
+          padding-top: 10vh !important;
+        }
+      }
+      .form-check {
+        padding-left: 7px !important;
+      }
+        
+    </style>
+@endsection
+
 @section('content')
 
 <div class="page-header header-filter" style="background-image: url('{{ asset('img/bg7.jpg') }}'); background-size: cover; background-position: top center;">

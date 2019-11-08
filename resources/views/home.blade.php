@@ -2,8 +2,24 @@
 
 @section('body-class', 'product-page')
 
+@section('styles')
+    <style>
+        .page-header{
+            min-height: 15vh !important;
+            background-position: center !important;
+        }
+
+
+      .main {
+        margin-top: 0px !important;
+        padding-top: 0vh !important;
+      }
+        
+    </style>
+@endsection
+
 @section('content')
-<div class="header header-filter" style="background-image: url('{{ asset('img/city.jpg') }}');">
+<div class="page-header header-filter" style="background-image: url('{{ asset('img/city.jpg') }}');">
 </div>
 
 <div class="main main-raised">

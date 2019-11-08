@@ -16,7 +16,7 @@
     
 
     <!-- CSS Files -->
-    <link href="{{ asset('/css/material-kit.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('/css/material-kitv2.min.css') }}" rel="stylesheet"/>
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('demo/demo.css') }}" rel="stylesheet" />
 
