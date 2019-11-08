@@ -8,7 +8,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="{{ url('about-us') }}">
                 Acerca de 
               </a>
             </li>

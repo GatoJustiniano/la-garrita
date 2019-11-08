@@ -21,8 +21,7 @@
 <div class="page-header header-filter" style="background-image: url('{{ asset('/img/profile_city.jpg') }}');">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <img src="{{ asset('/img/logo.png') }}" alt="Eventos La Garrita" width="100">
+            <div class="col-md-7">
                 <h1 class="title">Bienvenido a {{ config('app.name') }}.</h1>
                 <h4>Quieres armar una buena peda en tu casa? La Garrita te ofrece lo necesario para tu evento social.</h4>
                 <br />
