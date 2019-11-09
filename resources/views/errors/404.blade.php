@@ -113,7 +113,7 @@
             y: 200,
             r: 32,
             rotation: 0,
-            xVel: 10,
+            xVel: 11.5,
             yVel: 0,
             mass: 2.5,
             restitution: 0.3
@@ -262,7 +262,7 @@
 </script>
 
 <div class="wrap">
-    <h1>Uh-Oh! Error 404</h1>
+    <h1>Oh! Error 404</h1>
     <p>Estás en el medio de la nada. La página que solicitó se movió o no existe.</p>
     <p>Lo que puedes hacer:</p>
         <ul>
