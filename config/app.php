@@ -162,6 +162,12 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
+        /*
+         * Paquete de Rap2hpoutre, funcion de visor de .log
+         */
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
