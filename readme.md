@@ -13,3 +13,5 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Prueba de cambios en modo colaborativo
