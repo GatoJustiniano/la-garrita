@@ -37,6 +37,7 @@
                         </div>
                         <div class="ripple-container"></div>
                     </a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,32 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
+
+                <div class="nav-bar">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        @can('products.index')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('products.index') }}">Productos</a>
+                        </li>
+                        @endcan
+                        @can('users.index')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('users.index') }}">Usuarios</a>
+                        </li>
+                        @endcan
+                        @can('roles.index')
+                        <li class="nav-item">                            
+                            <a class="nav-link" href="{{ route('roles.index') }}">Roles</a>
+                        </li>
+                        @endcan
+                    </ul>
+                </div>
+
+
                 <div class="collapse navbar-collapse">
+                    
+                    <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         @guest
                             <li class="dropdown nav-item">

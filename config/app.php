@@ -163,10 +163,14 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
 
-        /*
-         * Paquete de Rap2hpoutre, funcion de visor de .log
-         */
+        /* Paquete de Rap2hpoutre, funcion de visor de .log     */
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+
+        /* Paquete de LaravelCollective, funcion de HTML     */
+        Collective\Html\HtmlServiceProvider::class,
+
+        /* Paquete de Shinobi, funcion de permiso y roles     */
+        Caffeinated\Shinobi\ShinobiServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -231,6 +235,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
