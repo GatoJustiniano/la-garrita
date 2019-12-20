@@ -14,6 +14,9 @@
             border: 1px solid transparent;
             border-radius: 18%;
         }
+        ul.pagination {
+            justify-content: center;
+        }
     </style>
 @endsection
 
@@ -105,6 +108,7 @@
                     </div>                
                     @endforeach
                 </div>
+                {{ $products->links() }}
             </div>
 
         </div>

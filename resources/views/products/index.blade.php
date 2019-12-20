@@ -9,48 +9,81 @@
         h1.title {
             font-size: 3rem;
         }
-        div.section.section-contacts {
-            background-color: #efffff;
-            border: 1px solid transparent;
-            border-radius: 18%;
+        ul.pagination {
+            justify-content: center;
         }
+
     </style>
 @endsection
 
 @section('content')
-<div class="main main-raised">
+<div class="main ">
     <div class="container">
 
-        <div class="section text-center">
-            <h2 class="title">Productos disponibles</h2>
-            <div class="team">
-                <div class="row">
-                    @foreach ($products as $product)
-                    <div class="col-md-4">
-                        <div class="team-player">
-                            <div class="card card-plain">
-                            <div class="col-md-6 ml-auto mr-auto">
-                                <img src="../asset/img/faces/avatar.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
-                            </div>
-                            <h4 class="card-title">{{$product->name}}
-                                <br>
-                                <small class="card-description text-muted">Model</small>
-                            </h4>
-                            <div class="card-body">
-                                <p class="card-description">{{$product->description}}
-                                <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                            </div>
-                            <div class="card-footer justify-content-center">
-                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                                <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>                
-                    @endforeach
+        <div class="section">
+            <h2 class="title text-center">Productos
+                @can('products.create')
+                    <a href="{{ route('products.create') }}" 
+                    class="btn btn-sm btn-primary pull-right">
+                        Crear Nuevo Producto
+                    </a>
+                @endcan
+            </h2>
+
+
+            <div class="card" >
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="10px">ID</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Descripción Larga</th>
+                                <th colspan="3">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($products as $product)
+                            <tr>
+                                <td>{{ $product->id }}</td>
+                                <td>{{ $product->name }}</td>
+                                <td>{{ $product->description }}</td>
+                                <td>{{ $product->long_description }}</td>
+                                @can('products.show')
+                                <td width="10px">
+                                    <a href="{{ route('products.show', $product->id) }}" 
+                                    class="btn btn-sm btn-default">
+                                        ver
+                                    </a>
+                                </td>
+                                @endcan
+                                @can('products.edit')
+                                <td width="10px">
+                                    <a href="{{ route('products.edit', $product->id) }}" 
+                                    class="btn btn-sm btn-default">
+                                        editar
+                                    </a>
+                                </td>
+                                @endcan
+                                @can('products.destroy')
+                                <td width="10px">
+                                    {!! Form::open(['route' => ['products.destroy', $product->id], 
+                                    'method' => 'DELETE']) !!}
+                                        <button class="btn btn-sm btn-danger">
+                                            Eliminar
+                                        </button>
+                                    {!! Form::close() !!}
+                                </td>
+                                @endcan
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                    <div>
+                        {{ $products->links() }}
+                    </div>
+                    
                 </div>
-            </div>
 
         </div>
 
