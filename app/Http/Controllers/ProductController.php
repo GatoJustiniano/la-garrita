@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
@@ -78,7 +79,12 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $product = Product::update($request->all());
+        $product = Product::find($id);
+        $product->name = $request->input('name');
+        $product->description = $request->input('description');
+        $product->long_description = $request->input('long_description');
+        $product->price = $request->input('price');
+        $product->save();
 
         return redirect()->route('products.edit', $product->id)
             ->with('info', 'Rol guardado con éxito');
@@ -92,8 +98,10 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
+        $mensaje = Product::find($id);
         $product = Product::find($id)->delete();
-
+        
+        Log::info( 'Producto eliminado: ' .$mensaje->id . ' ' . $mensaje->name . ' ' . $mensaje->description );
         return back()->with('info', 'Eliminado correctamente');
     }
 }
