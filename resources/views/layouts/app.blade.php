@@ -122,8 +122,20 @@
                 </div>
             </div>
         </nav>
-
-
+       
+        @if (session('info'))
+        <div class="alert alert-info" style="margin-top: 6rem;">
+            <div class="container">
+                <div class="alert-icon">
+                    <i class="material-icons">info_outline</i>
+                </div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                </button>
+                {{ session('info') }} 
+            </div>
+        </div>
+        @endif
         <div class="wrapper">
             @yield('content')
         </div>
