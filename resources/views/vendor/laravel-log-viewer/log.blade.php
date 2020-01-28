@@ -29,11 +29,6 @@
         font-size: 1.5em;
         margin-top: 0;
       }
-
-      #table-log {
-          font-size: 0.85rem;
-      }
-
       .sidebar {
           font-size: 0.85rem;
           line-height: 1;
