@@ -5,8 +5,6 @@ Route::get('/', 'TestController@welcome');
 
 Route::view('/about-us', 'about-us');
 
-Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
-
 Route::get('test', function () {
     \Log::info('aqui podemos colocar y concatenar todos los movimientos que realiza un usuario, a las 11:30am');
 });
@@ -17,6 +15,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::middleware(['auth'])->group(function () {
+	//Bitácora
+	Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->name('bitacora')
+		->middleware('can:logs');
+
 	//Roles
 	Route::post('roles/store', 'RoleController@store')->name('roles.store')
 		->middleware('can:roles.create');

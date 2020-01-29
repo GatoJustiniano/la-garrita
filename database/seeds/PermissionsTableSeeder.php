@@ -100,6 +100,12 @@ class PermissionsTableSeeder extends Seeder
             'description'   => 'Podría eliminar cualquier producto del sistema',      
         ]);
 
+        Permission::create([
+            'name'          => 'Acceso a la Bitácora',
+            'slug'          => 'logs',
+            'description'   => 'Vista detalla de los archivos logs del sistema',      
+        ]);
+
 
     }
 }
