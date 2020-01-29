@@ -34,6 +34,8 @@
                             <tr>
                                 <th width="10px">ID</th>
                                 <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Teléfono</th>
                                 <th>Email</th>
                                 <th colspan="3">&nbsp;</th>
                             </tr>
@@ -43,6 +45,8 @@
                             <tr>
                                 <td>{{ $user->id }}</td>
                                 <td>{{ $user->name }}</td>
+                                <td>{{ $user->address }}</td>
+                                <td>{{ $user->phone }}</td>
                                 <td>{{ $user->email }}</td>
                                 @can('users.show')
                                 <td width="10px">
