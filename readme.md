@@ -2,6 +2,10 @@
 
 Este proyecto está destinado al desarrollo y practica de Laravel 6.X 
 
+## Nota
+
+No robarme el proyecto, robar es malo. 
+
 
 ## About Laravel
 
