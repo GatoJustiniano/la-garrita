@@ -1,6 +1,7 @@
 ## Proyecto base
 
 Este proyecto está destinado al desarrollo y practica de Laravel 6.X 
+Discontinuado*
 
 ## Nota
 
