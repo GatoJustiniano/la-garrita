@@ -1,14 +1,17 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "laravel/la-garrita",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Aplicación POS La Garrita.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "laravel/folio": "^1.1",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "livewire/volt": "^1.7.0",
+        "rap2hpoutre/laravel-log-viewer": "^2.5"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -17,7 +20,8 @@
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
-        "phpunit/phpunit": "^11.5.3"
+        "pestphp/pest": "^3.7",
+        "pestphp/pest-plugin-laravel": "^3.1"
     },
     "autoload": {
         "psr-4": {
