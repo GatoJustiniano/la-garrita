@@ -19,8 +19,8 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/password', 'settings.password')->name('settings.password');
 });
 
+Route::get('logs', [LogViewerController::class, 'index'])->name('logs');
 Route::middleware('auth')->group(function () {
-    Route::get('logs', [LogViewerController::class, 'index'])->name('logs');
 });
 
 
