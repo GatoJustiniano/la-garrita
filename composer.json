@@ -10,7 +10,7 @@
         "laravel/folio": "^1.1",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "livewire/volt": "^1.7.0",
+        "livewire/volt": "^1.7",
         "rap2hpoutre/laravel-log-viewer": "^2.5"
     },
     "require-dev": {
