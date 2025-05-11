@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use Illuminate\Support\Facades\Route;
+use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 
 Route::get('/', function () {
   return view('welcome');
@@ -12,6 +13,7 @@ Route::view('dashboard', 'dashboard')
   ->name('dashboard');
 
 Route::middleware(['auth'])->group(function () {
+  Route::get('logs', [LogViewerController::class, 'index']);
   Route::redirect('settings', 'settings/profile');
 
   Volt::route('settings/profile', 'settings.profile')->name('settings.profile');
