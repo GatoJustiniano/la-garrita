@@ -3,7 +3,7 @@
 
 
 @props([
-    'pageTitle',
+  'pageTitle',
 ])
 
 

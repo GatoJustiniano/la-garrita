@@ -9,12 +9,12 @@
       <div class="d-flex justify-content-end">
           @if (Route::has('login'))
             @auth
-                <a href="{{ url('/dashboard') }}" class="btn btn-primary">Dashboard</a>
+                <a href="{{ url('/dashboard') }}" class="btn btn-primary">{{ __('Dashboard') }}</a>
             @else
-                <a href="{{ route('login') }}" class="btn btn-secondary me-2">Log in</a>
+                <a href="{{ route('login') }}" class="btn btn-secondary me-2">{{ __('Log in') }}</a>
 
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="btn btn-primary">Register</a>
+                    <a href="{{ route('register') }}" class="btn btn-primary">{{ __('Register') }}</a>
                 @endif
             @endauth
           @endif
@@ -40,6 +40,9 @@
         </div>
       </div>
     </div>
+    <footer class="py-16 text-center text-sm text-black dark:text-white/70">
+        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+    </footer>
 
     <!-- Include Scripts -->
     @include('partials.scripts')
