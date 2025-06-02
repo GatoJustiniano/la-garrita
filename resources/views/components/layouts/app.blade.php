@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="layout-menu-fixed" data-base-url="{{url('/')}}" data-framework="laravel">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" 
+  class="dark-style layout-navbar-fixed layout-menu-fixed" data-base-url="{{url('/')}}" 
+  dir="ltr" data-theme="theme-default" data-assets-path="{{ asset('/') }}"
+  data-template="vertical-menu-template-dark"
+  data-framework="laravel"
+  >
   <head>
     @include('partials.head')
   </head>
@@ -39,6 +44,8 @@
     </div>
 
     <!-- Include Scripts -->
+    <!-- Main JS -->
+    <script src="{{ asset('js/bt5/main.js') }}"></script>
     @include('partials.scripts')
     <!-- / Include Scripts -->
   </body>

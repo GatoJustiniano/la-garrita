@@ -1,6 +1,9 @@
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-
+<meta name="viewport" 
+  content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" 
+  />
+<!-- laravel CRUD token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 @props([
   'pageTitle',
@@ -14,8 +17,7 @@
 
 <meta name="description" content="{{ config('variables.templateDescription') ? config('variables.templateDescription') : '' }}" />
 <meta name="keywords" content="{{ config('variables.templateKeyword') ? config('variables.templateKeyword') : '' }}">
-<!-- laravel CRUD token -->
-<meta name="csrf-token" content="{{ csrf_token() }}">
+
 <!-- Canonical SEO -->
 <meta property="og:title" content="{{ config('variables.templateName') ? config('variables.templateName') : '' }}{{ config('variables.ogTitle') ? config('variables.ogTitle') : '' }}" />
 <meta property="og:type" content="{{ config('variables.ogType') ? config('variables.ogType') : '' }}" />

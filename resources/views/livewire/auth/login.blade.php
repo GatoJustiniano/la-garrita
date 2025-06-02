@@ -93,7 +93,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
 
     <form wire:submit="login" class="mb-6">
         <div class="mb-6">
-            <label for="email" class="form-label">{{ __('Email or Username') }}</label>
+            <label for="email" class="form-label">{{ __('Email') }}</label>
             <input
                 wire:model="email"
                 type="email"
