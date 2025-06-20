@@ -243,18 +243,16 @@
           </div>
         </div>
         <div id="heroDashboardAnimation" class="hero-animation-img">
-          <a href="#este es una imagen" target="_blank">
-            <div id="heroAnimationImg" class="position-relative hero-dashboard-img">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/hero-dashboard-light.png" alt="hero dashboard"
-                class="animation-img" 
-                data-app-light-img="front-pages/landing-page/hero-dashboard-light.png"
-                data-app-dark-img="front-pages/landing-page/hero-dashboard-dark.png" />
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/hero-elements-light.png" alt="hero elements"
-                class="position-absolute hero-elements-img animation-img top-0 start-0"
-                data-app-light-img="front-pages/landing-page/hero-elements-light.png"
-                data-app-dark-img="front-pages/landing-page/hero-elements-dark.png" />
-            </div>
-          </a>
+          <div id="heroAnimationImg" class="position-relative hero-dashboard-img">
+            <img src="{{ asset('img/frontend/hero-dashboard-light.png')}}" alt="hero dashboard"
+              class="animation-img" 
+              data-app-light-img="frontend/hero-dashboard-light.png"
+              data-app-dark-img="frontend/hero-dashboard-dark.png" />
+            <img src="{{ asset('img/frontend/hero-elements-light.png')}}" alt="hero elements"
+              class="position-absolute hero-elements-img animation-img top-0 start-0"
+              data-app-light-img="frontend/hero-elements-light.png"
+              data-app-dark-img="frontend/hero-elements-dark.png" />
+          </div>
         </div>
       </div>
     </div>
@@ -594,29 +592,29 @@
         <div class="swiper" id="swiper-clients-logos">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo_1-light.png" alt="client logo" class="client-logo"
-                data-app-light-img="front-pages/branding/logo_1-light.png"
-                data-app-dark-img="front-pages/branding/logo_1-dark.png" />
+              <img src="{{ asset('img/frontend/logo_1-light.png')}}" alt="client logo" class="client-logo"
+                data-app-light-img="frontend/logo_1-light.png"
+                data-app-dark-img="frontend/logo_1-dark.png" />
             </div>
             <div class="swiper-slide">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo_2-light.png" alt="client logo" class="client-logo"
-                data-app-light-img="front-pages/branding/logo_2-light.png"
-                data-app-dark-img="front-pages/branding/logo_2-dark.png" />
+              <img src="{{ asset('img/frontend/logo_2-light.png')}}" alt="client logo" class="client-logo"
+                data-app-light-img="frontend/logo_2-light.png"
+                data-app-dark-img="frontend/logo_2-dark.png" />
             </div>
             <div class="swiper-slide">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo_3-light.png" alt="client logo" class="client-logo"
-                data-app-light-img="front-pages/branding/logo_3-light.png"
-                data-app-dark-img="front-pages/branding/logo_3-dark.png" />
+              <img src="{{ asset('img/frontend/logo_3-light.png')}}" alt="client logo" class="client-logo"
+                data-app-light-img="frontend/logo_3-light.png"
+                data-app-dark-img="frontend/logo_3-dark.png" />
             </div>
             <div class="swiper-slide">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo_4-light.png" alt="client logo" class="client-logo"
-                data-app-light-img="front-pages/branding/logo_4-light.png"
-                data-app-dark-img="front-pages/branding/logo_4-dark.png" />
+              <img src="{{ asset('img/frontend/logo_4-light.png')}}" alt="client logo" class="client-logo"
+                data-app-light-img="frontend/logo_4-light.png"
+                data-app-dark-img="frontend/logo_4-dark.png" />
             </div>
             <div class="swiper-slide">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo_5-light.png" alt="client logo" class="client-logo"
-                data-app-light-img="front-pages/branding/logo_5-light.png"
-                data-app-dark-img="front-pages/branding/logo_5-dark.png" />
+              <img src="{{ asset('img/frontend/logo_5-light.png')}}" alt="client logo" class="client-logo"
+                data-app-light-img="frontend/logo_5-light.png"
+                data-app-dark-img="frontend/logo_5-dark.png" />
             </div>
           </div>
         </div>
@@ -1222,10 +1220,10 @@
   <!-- FAQ: End -->
   <!-- CTA: Start -->
   <section id="landingCTA" class="section-py landing-cta position-relative p-lg-0 pb-0">
-    <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/backgrounds/cta-bg-light.png"
+    <img src="{{ asset('img/frontend/cta-bg-light.png')}}"
       class="position-absolute bottom-0 end-0 scaleX-n1-rtl h-100 w-100 z-n1" alt="cta image"
-      data-app-light-img="front-pages/backgrounds/cta-bg-light.png"
-      data-app-dark-img="front-pages/backgrounds/cta-bg-dark.png" />
+      data-app-light-img="frontend/cta-bg-light.png"
+      data-app-dark-img="frontend/cta-bg-dark.png" />
     <div class="container">
       <div class="row align-items-center gy-12">
         <div class="col-lg-6 text-start text-sm-center text-lg-start">
