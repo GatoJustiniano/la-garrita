@@ -11,8 +11,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
 
 
@@ -42,7 +41,8 @@
 
 </head>
 
-
+<script src="{{ asset('js/frontend/dropdown-hover.js') }}"></script>
+<script src="{{ asset('js/frontend/mega-dropdown.js') }}"></script>
 <!-- Navbar: Start -->
 <nav class="layout-navbar shadow-none py-0">
   <div class="container">
@@ -164,7 +164,7 @@
               <button type="button" class="dropdown-item align-items-center active" data-bs-theme-value="light"
                 aria-pressed="false">
                 <span>
-                  <i class="icon-base bx bx-sun icon-md me-3" data-icon="sun"></i>Light
+                  <i class="icon-base bx bx-sun icon-md me-3" data-icon="sun"></i>Modo Claro
                 </span>
               </button>
             </li>
@@ -172,7 +172,7 @@
               <button type="button" class="dropdown-item align-items-center" data-bs-theme-value="dark"
                 aria-pressed="true">
                 <span>
-                  <i class="icon-base bx bx-moon icon-md me-3" data-icon="moon"></i>Dark
+                  <i class="icon-base bx bx-moon icon-md me-3" data-icon="moon"></i>Modo Oscuro
                 </span>
               </button>
             </li>
@@ -180,7 +180,7 @@
               <button type="button" class="dropdown-item align-items-center" data-bs-theme-value="system"
                 aria-pressed="false">
                 <span>
-                  <i class="icon-base bx bx-desktop icon-md me-3" data-icon="desktop"></i>System
+                  <i class="icon-base bx bx-desktop icon-md me-3" data-icon="desktop"></i>Sistema
                 </span>
               </button>
             </li>
@@ -1411,20 +1411,16 @@
               <a href="../vertical-menu-template/" target="_blank" class="footer-link">Vertical Layout</a>
             </li>
             <li class="mb-4">
-              <a href="../horizontal-menu-template/" target="_blank" class="footer-link">Horizontal
-                Layout</a>
+              <a href="../horizontal-menu-template/" target="_blank" class="footer-link">Horizontal Layout</a>
             </li>
             <li class="mb-4">
-              <a href="../vertical-menu-template-bordered/" target="_blank" class="footer-link">Bordered
-                Layout</a>
+              <a href="../vertical-menu-template-bordered/" target="_blank" class="footer-link">Bordered Layout</a>
             </li>
             <li class="mb-4">
-              <a href="../vertical-menu-template-semi-dark/" target="_blank" class="footer-link">Semi Dark
-                Layout</a>
+              <a href="../vertical-menu-template-semi-dark/" target="_blank" class="footer-link">Semi Dark Layout</a>
             </li>
             <li>
-              <a href="../vertical-menu-template-dark/" target="_blank" class="footer-link">Dark
-                Layout</a>
+              <a href="../vertical-menu-template-dark/" target="_blank" class="footer-link">Dark Layout</a>
             </li>
           </ul>
         </div>
@@ -1528,7 +1524,6 @@
 <!-- Vendors JS -->
 <script src="{{ asset('js/frontend/nouislider.js') }}"></script>
 <script src="{{ asset('js/frontend/swiper.js') }}"></script>
-<script src="{{ asset('js/frontend/mega-dropdown.js') }}"></script>
 <script src="{{ asset('js/frontend/front-config.js') }}"></script>
 <script src="{{ asset('js/frontend/pickr.js') }}"></script>
 

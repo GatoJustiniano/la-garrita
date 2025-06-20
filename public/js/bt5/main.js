@@ -51,10 +51,10 @@ document.getElementById("layout-menu") && (isHorizontalLayout = document.getElem
 					"light" === e ? window.templateCustomizer.setStyle("light") : "dark" === e ? window.templateCustomizer.setStyle("dark") : window.templateCustomizer.setStyle("system")
 				})
 			}), l = t.querySelector("i"), "light" === s ? (l.classList.add("bx-sun"), new bootstrap.Tooltip(l, {
-				title: "Light Mode",
+				title: "Modo Claro",
 				fallbackPlacements: ["bottom"]
 			})) : "dark" === s ? (l.classList.add("bx-moon"), new bootstrap.Tooltip(l, {
-				title: "Dark Mode",
+				title: "Modo Oscuro",
 				fallbackPlacements: ["bottom"]
 			})) : (l.classList.add("bx-desktop"), new bootstrap.Tooltip(l, {
 				title: "System Mode",
