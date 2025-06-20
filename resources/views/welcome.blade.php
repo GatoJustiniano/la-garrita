@@ -56,7 +56,7 @@
           <i class="icon-base bx bx-menu icon-lg align-middle text-heading fw-medium"></i>
         </button>
         <!-- Mobile menu toggle: End-->
-        <a href="/dashboard" class="app-brand-link">
+        <a href="/" class="app-brand-link">
           <span class="app-brand-logo demo">
             @if (!empty($settingGeneral->site_logo))
             <img width="40px" src="{{ asset('img_logo/' . $settingGeneral->site_logo)}}" alt="icon" />
@@ -79,72 +79,19 @@
         </button>
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link fw-medium" aria-current="page" href="landing-page.html#landingHero">Home</a>
+            <a class="nav-link fw-medium" aria-current="page" href="#landingHero">Principal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="landing-page.html#landingFeatures">Features</a>
+            <a class="nav-link fw-medium" href="#landingFeatures">Características</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="landing-page.html#landingTeam">Team</a>
+            <a class="nav-link fw-medium" href="#landingTeam">Equipo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="landing-page.html#landingFAQ">FAQ</a>
+            <a class="nav-link fw-medium" href="#landingFAQ">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-medium" href="landing-page.html#landingContact">Contact us</a>
-          </li>
-          <li class="nav-item mega-dropdown">
-            <a href="javascript:void(0);"
-              class="nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium" aria-expanded="false"
-              data-bs-toggle="mega-dropdown" data-trigger="hover">
-              <span data-i18n="Pages">Pages</span>
-            </a>
-            <div class="dropdown-menu p-4 p-xl-8">
-              <div class="row gy-4">
-                <div class="col-12 col-lg">
-                  <div class="h6 d-flex align-items-center mb-3 mb-lg-4">
-                    <div class="avatar flex-shrink-0 me-3">
-                      <span class="avatar-initial rounded bg-label-primary">
-                        <i class="icon-base bx bx-grid-alt"></i>
-                      </span>
-                    </div>
-                    <span class="ps-1">Other</span>
-                  </div>
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link mega-dropdown-link" href="pricing-page.html">
-                        <i class="icon-base bx bx-radio-circle me-1"></i>
-                        <span data-i18n="Pricing">Pricing</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mega-dropdown-link" href="payment-page.html">
-                        <i class="icon-base bx bx-radio-circle me-1"></i>
-                        <span data-i18n="Payment">Payment</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mega-dropdown-link" href="checkout-page.html">
-                        <i class="icon-base bx bx-radio-circle me-1"></i>
-                        <span data-i18n="Checkout">Checkout</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link mega-dropdown-link" href="help-center-landing.html">
-                        <i class="icon-base bx bx-radio-circle me-1"></i>
-                        <span data-i18n="Help Center">Help Center</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-4 d-none d-lg-block">
-                  <div class="bg-body nav-img-col p-2">
-                    <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/misc/nav-item-col-img.png" alt="nav item col image"
-                      class="w-100" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a class="nav-link fw-medium" href="#landingContact">Contáctenos</a>
           </li>
         </ul>
       </div>
@@ -226,20 +173,21 @@
         class="position-absolute top-0 start-50 translate-middle-x object-fit-cover w-100 h-100" data-speed="1" />
       <div class="container">
         <div class="hero-text-box text-center position-relative">
-          <h1 class="text-primary hero-title display-6 fw-extrabold">One dashboard to manage all your
-            businesses</h1>
+          <h1 class="text-primary hero-title display-6 fw-extrabold">
+            Un panel de control para gestionar todos tus negocios
+          </h1>
           <h2 class="hero-sub-title h6 mb-6">
-            Production-ready & easy to use Admin Template
+            Plantilla de administración lista para producción y fácil de usar
             <br class="d-none d-lg-block" />
-            for Reliability and Customizability.
+            para confiabilidad y personalización.
 
           </h2>
           <div class="landing-hero-btn d-inline-block position-relative">
-            <span class="hero-btn-item position-absolute d-none d-md-flex fw-medium">Join community
+            <span class="hero-btn-item position-absolute d-none d-md-flex fw-medium">Ingresa a {{ $settingGeneral->site_title }}
               <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/Join-community-arrow.png" alt="Join community arrow"
                 class="scaleX-n1-rtl" />
             </span>
-            <a href="#landingPricing" class="btn btn-primary btn-lg">Get early access</a>
+            <a href="#landingPricing" class="btn btn-primary btn-lg">Solicita al equipo</a>
           </div>
         </div>
         <div id="heroDashboardAnimation" class="hero-animation-img">
@@ -263,19 +211,20 @@
   <section id="landingFeatures" class="section-py landing-features">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="badge bg-label-primary">Useful Features</span>
+        <span class="badge bg-label-primary">Características útiles</span>
       </div>
       <h4 class="text-center mb-1">
-        <span class="position-relative fw-extrabold z-1">Everything you need
+        <span class="position-relative fw-extrabold z-1">Todo lo que necesitas
 
           <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
         </span>
-        to start your next project
+        para iniciar tu próximo proyecto
 
       </h4>
-      <p class="text-center mb-12">Not just a set of tools, the package includes ready-to-deploy conceptual
-        application.</p>
+      <p class="text-center mb-12">
+        No es solo un conjunto de herramientas, el paquete incluye aplicaciones conceptuales listas para implementar..
+      </p>
       <div class="features-icon-wrapper row gx-0 gy-6 g-sm-12">
         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
           <div class="mb-4 text-primary text-center">
@@ -289,8 +238,9 @@
             </svg>
           </div>
           <h5 class="mb-2">Quality Code</h5>
-          <p class="features-icon-description">Code structure that all developers will easily understand and
-            fall in love with.</p>
+          <p class="features-icon-description">
+            Estructura de código que todos los desarrolladores comprenderán fácilmente y de la que se enamorarán..
+          </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
           <div class="mb-4 text-primary text-center">
@@ -303,9 +253,10 @@
                 fill="currentColor" />
             </svg>
           </div>
-          <h5 class="mb-2">Continuous Updates</h5>
-          <p class="features-icon-description">Free updates for the next 12 months, including new demos and
-            features.</p>
+          <h5 class="mb-2">Actualizaciones continuas</h5>
+          <p class="features-icon-description">
+            Actualizaciones gratuitas durante los próximos 12 meses, incluidas nuevas demostraciones y funciones.
+          </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
           <div class="text-center mb-4 text-primary">
@@ -319,8 +270,9 @@
             </svg>
           </div>
           <h5 class="mb-2">Starter-Kit</h5>
-          <p class="features-icon-description">Start your project quickly without having to remove unnecessary
-            features.</p>
+          <p class="features-icon-description">
+            Comience su proyecto rápidamente sin tener que eliminar funciones innecesarias.
+          </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
           <div class="text-center mb-4 text-primary">
@@ -333,9 +285,10 @@
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
-          <h5 class="mb-2">API Ready</h5>
-          <p class="features-icon-description">Just change the endpoint and see your own data loaded within
-            seconds.</p>
+          <h5 class="mb-2">API Listo</h5>
+          <p class="features-icon-description">
+            Simplemente cambie el punto final y vea sus propios datos cargados en segundos.
+          </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
           <div class="text-center mb-4 text-primary">
@@ -348,9 +301,10 @@
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </div>
-          <h5 class="mb-2">Excellent Support</h5>
-          <p class="features-icon-description">An easy-to-follow doc with lots of references and code
-            examples.</p>
+          <h5 class="mb-2">Excelente soporte</h5>
+          <p class="features-icon-description">
+            Un documento fácil de seguir con muchas referencias y ejemplos de código..
+          </p>
         </div>
         <div class="col-lg-4 col-sm-6 text-center features-icon-box">
           <div class="text-center mb-4 text-primary">
@@ -363,9 +317,10 @@
                 fill="currentColor" />
             </svg>
           </div>
-          <h5 class="mb-2">Well Documented</h5>
-          <p class="features-icon-description">An easy-to-follow doc with lots of references and code
-            examples.</p>
+          <h5 class="mb-2">Bien documentado</h5>
+          <p class="features-icon-description">
+            Un documento fácil de seguir con muchas referencias y ejemplos de código..
+          </p>
         </div>
       </div>
     </div>
@@ -378,19 +333,19 @@
       <div class="row align-items-center gx-0 gy-4 g-lg-5 mb-5 pb-md-5">
         <div class="col-md-6 col-lg-5 col-xl-3">
           <div class="mb-4">
-            <span class="badge bg-label-primary">Real Customers Reviews</span>
+            <span class="badge bg-label-primary">Reseñas de clientes reales</span>
           </div>
           <h4 class="mb-1">
-            <span class="position-relative fw-extrabold z-1">What people say
+            <span class="position-relative fw-extrabold z-1">Lo que dice la gente
 
               <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
                 class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
             </span>
           </h4>
           <p class="mb-5 mb-md-12">
-            See what our customers have to
+            Vea lo que nuestros clientes tienen que decir sobre su experiencia
             <br class="d-none d-xl-block" />
-            say about their experience.
+            decir sobre su experiencia.
 
           </p>
           <div class="landing-reviews-btns">
@@ -413,8 +368,9 @@
                         <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo-1.png" alt="client logo"
                           class="client-logo img-fluid" />
                       </div>
-                      <p>“Vuexy is hands down the most useful front end Bootstrap theme I've ever
-                        used. I can't wait to use it again for my next project.”</p>
+                      <p>
+                        {{ $settingGeneral->site_title }} es, sin duda, el tema de Bootstrap para front-end más útil que he usado. ¡Estoy deseando volver a usarlo en mi próximo proyecto!.”
+                      </p>
                       <div class="text-warning mb-4">
                         <i class="icon-base bx bxs-star"></i>
                         <i class="icon-base bx bxs-star"></i>
@@ -428,7 +384,7 @@
                         </div>
                         <div>
                           <h6 class="mb-0">Cecilia Payne</h6>
-                          <p class="small text-body-secondary mb-0">CEO of Airbnb</p>
+                          <p class="small text-body-secondary mb-0">CEO de Airbnb</p>
                         </div>
                       </div>
                     </div>
@@ -441,8 +397,9 @@
                         <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo-2.png" alt="client logo"
                           class="client-logo img-fluid" />
                       </div>
-                      <p>“I've never used a theme as versatile and flexible as Vuexy. It's my go
-                        to for building dashboard sites on almost any project.”</p>
+                      <p>
+                        “Nunca he usado un tema tan versátil y flexible como Vuexy. Es mi opción preferida para crear sitios con paneles de control en casi cualquier proyecto..”
+                      </p>
                       <div class="text-warning mb-4">
                         <i class="icon-base bx bxs-star"></i>
                         <i class="icon-base bx bxs-star"></i>
@@ -456,7 +413,7 @@
                         </div>
                         <div>
                           <h6 class="mb-0">Eugenia Moore</h6>
-                          <p class="small text-body-secondary mb-0">Founder of Hubspot</p>
+                          <p class="small text-body-secondary mb-0">Fundador de Hubspot</p>
                         </div>
                       </div>
                     </div>
@@ -469,9 +426,9 @@
                         <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo-3.png" alt="client logo"
                           class="client-logo img-fluid" />
                       </div>
-                      <p>This template is really clean & well documented. The docs are really easy
-                        to understand and it's always easy to find a screenshot from their
-                        website.</p>
+                      <p>
+                        Esta plantilla es muy clara y está bien documentada. La documentación es muy fácil de entender y siempre es fácil encontrar una captura de pantalla en su sitio web.
+                      </p>
                       <div class="text-warning mb-4">
                         <i class="icon-base bx bxs-star"></i>
                         <i class="icon-base bx bxs-star"></i>
@@ -485,7 +442,7 @@
                         </div>
                         <div>
                           <h6 class="mb-0">Curtis Fletcher</h6>
-                          <p class="small text-body-secondary mb-0">Design Lead at Dribbble
+                          <p class="small text-body-secondary mb-0">Design Lead de Dribbble
                           </p>
                         </div>
                       </div>
@@ -499,8 +456,9 @@
                         <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo-4.png" alt="client logo"
                           class="client-logo img-fluid" />
                       </div>
-                      <p>All the requirements for developers have been taken into consideration,
-                        so I’m able to build any interface I want.</p>
+                      <p>
+                        Se han tenido en cuenta todos los requisitos para los desarrolladores, por lo que puedo crear cualquier interfaz que quiera.
+                      </p>
                       <div class="text-warning mb-4">
                         <i class="icon-base bx bxs-star"></i>
                         <i class="icon-base bx bxs-star"></i>
@@ -514,7 +472,7 @@
                         </div>
                         <div>
                           <h6 class="mb-0">Sara Smith</h6>
-                          <p class="small text-body-secondary mb-0">Founder of Continental</p>
+                          <p class="small text-body-secondary mb-0">Fundador de Continental</p>
                         </div>
                       </div>
                     </div>
@@ -527,8 +485,9 @@
                         <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/branding/logo-5.png" alt="client logo"
                           class="client-logo img-fluid" />
                       </div>
-                      <p>“I've never used a theme as versatile and flexible as Vuexy. It's my go
-                        to for building dashboard sites on almost any project.”</p>
+                      <p>
+                        “Nunca he usado un tema tan versátil y flexible como Vuexy. Es mi opción preferida para crear sitios con paneles de control en casi cualquier proyecto.”
+                      </p>
                       <div class="text-warning mb-4">
                         <i class="icon-base bx bxs-star"></i>
                         <i class="icon-base bx bxs-star"></i>
@@ -542,7 +501,7 @@
                         </div>
                         <div>
                           <h6 class="mb-0">Eugenia Moore</h6>
-                          <p class="small text-body-secondary mb-0">Founder of Hubspot</p>
+                          <p class="small text-body-secondary mb-0">Fundador de Hubspot</p>
                         </div>
                       </div>
                     </div>
@@ -570,7 +529,7 @@
                         </div>
                         <div>
                           <h6 class="mb-0">Sara Smith</h6>
-                          <p class="small text-body-secondary mb-0">Founder of Continental</p>
+                          <p class="small text-body-secondary mb-0">Fundador de Continental</p>
                         </div>
                       </div>
                     </div>
@@ -627,64 +586,40 @@
   <section id="landingTeam" class="section-py landing-team">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="badge bg-label-primary">Our Great Team</span>
+        <span class="badge bg-label-primary">Nuestro gran equipo</span>
       </div>
       <h4 class="text-center mb-1">
-        <span class="position-relative fw-extrabold z-1">Supported
+        <span class="position-relative fw-extrabold z-1">Equipo de desarrollo
 
           <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
         </span>
-        by Real People
+        para Ingeniería de Software
 
       </h4>
-      <p class="text-center mb-md-11 pb-0 pb-xl-12">Who is behind these great-looking interfaces?</p>
+      <p class="text-center mb-md-11 pb-0 pb-xl-12">¿El equipo detrás de {{ $settingGeneral->site_title }}?</p>
       <div class="row gy-12 mt-2">
-        <div class="col-lg-3 col-sm-6">
-          <div class="card mt-3 mt-lg-0 shadow-none">
-            <div class="bg-label-primary border border-bottom-0 border-primary-subtle position-relative team-image-box">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/team-member-1.png"
-                class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
-            </div>
-            <div class="card-body border border-top-0 border-primary-subtle text-center py-5">
-              <h5 class="card-title mb-0">Sophie Gilbert</h5>
-              <p class="text-body-secondary mb-0">Project Manager</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="card mt-3 mt-lg-0 shadow-none">
-            <div class="bg-label-info border border-bottom-0 border-info-subtle position-relative team-image-box">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/team-member-2.png"
-                class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
-            </div>
-            <div class="card-body border border-top-0 border-info-subtle text-center py-5">
-              <h5 class="card-title mb-0">Paul Miles</h5>
-              <p class="text-body-secondary mb-0">UI Designer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="card mt-3 mt-lg-0 shadow-none">
-            <div class="bg-label-danger border border-bottom-0 border-danger-subtle position-relative team-image-box">
-              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/team-member-3.png"
-                class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
-            </div>
-            <div class="card-body border border-top-0 border-danger-subtle text-center py-5">
-              <h5 class="card-title mb-0">Nannie Ford</h5>
-              <p class="text-body-secondary mb-0">Development Lead</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-6 col-sm-6">
           <div class="card mt-3 mt-lg-0 shadow-none">
             <div class="bg-label-success border border-bottom-0 border-success-subtle position-relative team-image-box">
               <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/team-member-4.png"
                 class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
             </div>
             <div class="card-body border border-top-0 border-success-subtle text-center py-5">
-              <h5 class="card-title mb-0">Chris Watkins</h5>
-              <p class="text-body-secondary mb-0">Marketing Manager</p>
+              <h5 class="card-title mb-0">Alvaro Andres Justiniano</h5>
+              <p class="text-body-secondary mb-0">Project Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <div class="card mt-3 mt-lg-0 shadow-none">
+            <div class="bg-label-info border border-bottom-0 border-info-subtle position-relative team-image-box">
+              <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/team-member-3.png"
+                class="position-absolute card-img-position bottom-0 start-50" alt="human image" />
+            </div>
+            <div class="card-body border border-top-0 border-info-subtle text-center py-5">
+              <h5 class="card-title mb-0">Fabian Nelson Galvan</h5>
+              <p class="text-body-secondary mb-0">Scrum Master</p>
             </div>
           </div>
         </div>
@@ -696,35 +631,35 @@
   <section id="landingPricing" class="section-py bg-body landing-pricing">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="badge bg-label-primary">Pricing Plans</span>
+        <span class="badge bg-label-primary">Planes</span>
       </div>
       <h4 class="text-center mb-1">
-        <span class="position-relative fw-extrabold z-1">Tailored pricing plans
+        <span class="position-relative fw-extrabold z-1">Planes accesibles
 
           <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
         </span>
-        designed for you
+        para cualquiera
 
       </h4>
-      <p class="text-center pb-2 mb-7">All plans include 40+ advanced tools and features to boost your product.
-        <br />Choose the best plan to fit your needs.
+      <p class="text-center pb-2 mb-7">Todos los planes incluyen más de 40 herramientas y funciones avanzadas para impulsar su producto.
+        <br />Elige el mejor plan que se ajuste a tus necesidades.
       </p>
       <div class="text-center mb-12">
         <div class="position-relative d-inline-block pt-3 pt-md-0">
           <label class="switch switch-sm switch-primary me-0">
-            <span class="switch-label fs-6 text-body me-3">Pay Monthly</span>
+            <span class="switch-label fs-6 text-body me-3">Pagar mensualmente</span>
             <input type="checkbox" class="switch-input price-duration-toggler" checked />
             <span class="switch-toggle-slider">
               <span class="switch-on"></span>
               <span class="switch-off"></span>
             </span>
-            <span class="switch-label fs-6 text-body ms-3">Pay Annual</span>
+            <span class="switch-label fs-6 text-body ms-3">Pago anual</span>
           </label>
           <div class="pricing-plans-item position-absolute d-flex">
             <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/pricing-plans-arrow.png" alt="pricing plans arrow"
               class="scaleX-n1-rtl" />
-            <span class="fw-medium mt-2 ms-1"> Save 25%</span>
+            <span class="fw-medium mt-2 ms-1"> Ahorra 25%</span>
           </div>
         </div>
       </div>
@@ -740,11 +675,11 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <span class="price-monthly h2 text-primary fw-extrabold mb-0">$19</span>
                   <span class="price-yearly h2 text-primary fw-extrabold mb-0 d-none">$14</span>
-                  <sub class="h6 text-body-secondary mb-n1 ms-1">/mo</sub>
+                  <sub class="h6 text-body-secondary mb-n1 ms-1">/mes</sub>
                 </div>
                 <div class="position-relative pt-2">
                   <div class="price-yearly text-body-secondary price-yearly-toggle d-none">$ 168 /
-                    year</div>
+                    año</div>
                 </div>
               </div>
             </div>
@@ -755,7 +690,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Timeline
+                    Cronología
 
                   </h6>
                 </li>
@@ -764,7 +699,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Basic search
+                    Búsqueda básica
 
                   </h6>
                 </li>
@@ -773,7 +708,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Live chat widget
+                    Widget de chat en vivo
 
                   </h6>
                 </li>
@@ -782,7 +717,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Email marketing
+                    Marketing por correo electrónico
 
                   </h6>
                 </li>
@@ -791,7 +726,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Custom Forms
+                    Formularios personalizados
 
                   </h6>
                 </li>
@@ -800,7 +735,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Traffic analytics
+                    Análisis de tráfico
 
                   </h6>
                 </li>
@@ -809,13 +744,13 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Basic Support
+                    Soporte básico
 
                   </h6>
                 </li>
               </ul>
               <div class="d-grid mt-8">
-                <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
+                <a href="/" class="btn btn-label-primary">Iniciar</a>
               </div>
             </div>
           </div>
@@ -827,15 +762,15 @@
             <div class="card-header">
               <div class="text-center">
                 <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/plane.png" alt="plane icon" class="mb-8 pb-2" />
-                <h4 class="mb-0">Team</h4>
+                <h4 class="mb-0">Equipo</h4>
                 <div class="d-flex align-items-center justify-content-center">
                   <span class="price-monthly h2 text-primary fw-extrabold mb-0">$29</span>
                   <span class="price-yearly h2 text-primary fw-extrabold mb-0 d-none">$22</span>
-                  <sub class="h6 text-body-secondary mb-n1 ms-1">/mo</sub>
+                  <sub class="h6 text-body-secondary mb-n1 ms-1">/mes</sub>
                 </div>
                 <div class="position-relative pt-2">
                   <div class="price-yearly text-body-secondary price-yearly-toggle d-none">$ 264 /
-                    year</div>
+                    año</div>
                 </div>
               </div>
             </div>
@@ -846,7 +781,7 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Everything in basic
+                    Todo en lo básico
 
                   </h6>
                 </li>
@@ -855,7 +790,7 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Timeline with database
+                    Línea de tiempo con base de datos
 
                   </h6>
                 </li>
@@ -864,7 +799,7 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Advanced search
+                    Búsqueda avanzada
 
                   </h6>
                 </li>
@@ -873,7 +808,7 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Marketing automation
+                    Automatización del marketing
 
                   </h6>
                 </li>
@@ -882,7 +817,7 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Advanced chatbot
+                    Chatbot avanzado
 
                   </h6>
                 </li>
@@ -891,7 +826,7 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Campaign management
+                    Gestión de campañas
 
                   </h6>
                 </li>
@@ -900,13 +835,13 @@
                     <span class="badge badge-center rounded-pill bg-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Collaboration tools
+                    Herramientas de colaboración
 
                   </h6>
                 </li>
               </ul>
               <div class="d-grid mt-8">
-                <a href="payment-page.html" class="btn btn-primary">Get Started</a>
+                <a href="/" class="btn btn-primary">Iniciar</a>
               </div>
             </div>
           </div>
@@ -919,15 +854,15 @@
               <div class="text-center">
                 <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/shuttle-rocket.png" alt="shuttle rocket icon"
                   class="mb-8 pb-2" />
-                <h4 class="mb-0">Enterprise</h4>
+                <h4 class="mb-0">Empresa</h4>
                 <div class="d-flex align-items-center justify-content-center">
                   <span class="price-monthly h2 text-primary fw-extrabold mb-0">$49</span>
                   <span class="price-yearly h2 text-primary fw-extrabold mb-0 d-none">$37</span>
-                  <sub class="h6 text-body-secondary mb-n1 ms-1">/mo</sub>
+                  <sub class="h6 text-body-secondary mb-n1 ms-1">/mes</sub>
                 </div>
                 <div class="position-relative pt-2">
                   <div class="price-yearly text-body-secondary price-yearly-toggle d-none">$ 444 /
-                    year</div>
+                    año</div>
                 </div>
               </div>
             </div>
@@ -938,7 +873,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Everything in premium
+                    Todo en premium
 
                   </h6>
                 </li>
@@ -947,7 +882,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Timeline with database
+                    Línea de tiempo con base de datos
 
                   </h6>
                 </li>
@@ -956,7 +891,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Fuzzy search
+                    Búsqueda difusa
 
                   </h6>
                 </li>
@@ -965,7 +900,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    A/B testing sanbox
+                    Sandbox de pruebas A/B
 
                   </h6>
                 </li>
@@ -974,7 +909,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Custom permissions
+                    Permisos personalizados
 
                   </h6>
                 </li>
@@ -983,7 +918,7 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Social media automation
+                    Automatización de redes sociales
 
                   </h6>
                 </li>
@@ -992,13 +927,13 @@
                     <span class="badge badge-center rounded-pill bg-label-primary p-0 me-3">
                       <i class="icon-base bx bx-check icon-12px"></i>
                     </span>
-                    Sales automation tools
+                    Herramientas de automatización de ventas
 
                   </h6>
                 </li>
               </ul>
               <div class="d-grid mt-8">
-                <a href="payment-page.html" class="btn btn-label-primary">Get Started</a>
+                <a href="payment-page.html" class="btn btn-label-primary">Iniciar</a>
               </div>
             </div>
           </div>
@@ -1025,11 +960,11 @@
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
-              <h3 class="mb-0">7.1k+</h3>
+              <h3 class="mb-0">1.3k+</h3>
               <p class="fw-medium mb-0">
-                Support Tickets
+                Tickets de soporte
                 <br />
-                Resolved
+                Resuelto
 
               </p>
             </div>
@@ -1050,11 +985,11 @@
                   </g>
                 </svg>
               </div>
-              <h3 class="mb-0">50k+</h3>
+              <h3 class="mb-0">2k+</h3>
               <p class="fw-medium mb-0">
-                Join Creatives
+                Lineas de código
                 <br />
-                Community
+                Limpias
 
               </p>
             </div>
@@ -1077,9 +1012,9 @@
               </div>
               <h3 class="mb-0">4.8/5</h3>
               <p class="fw-medium mb-0">
-                Highly Rated
+                Altamente calificado
                 <br />
-                Products
+                Productos
 
               </p>
             </div>
@@ -1100,9 +1035,9 @@
               </div>
               <h3 class="mb-0">100%</h3>
               <p class="fw-medium mb-0">
-                Money Back
+                Devolución de dinero
                 <br />
-                Guarantee
+                Garantizado
 
               </p>
             </div>
@@ -1119,15 +1054,15 @@
         <span class="badge bg-label-primary">FAQ</span>
       </div>
       <h4 class="text-center mb-1">
-        Frequently asked
+        Preguntas frecuentes
 
-        <span class="position-relative fw-extrabold z-1">questions
+        <span class="position-relative fw-extrabold z-1">preguntas
 
           <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
         </span>
       </h4>
-      <p class="text-center mb-12 pb-md-4">Browse through these FAQs to find answers to commonly asked questions.
+      <p class="text-center mb-12 pb-md-4">Explore estas preguntas frecuentes para encontrar respuestas a preguntas frecuentes.
       </p>
       <div class="row gy-12 align-items-center">
         <div class="col-lg-5">
@@ -1141,75 +1076,57 @@
             <div class="card accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordionOne"
-                  aria-expanded="true" aria-controls="accordionOne">Do
-                  you charge for each upgrade?</button>
+                  aria-expanded="true" aria-controls="accordionOne">¿Cobran por cada actualización?</button>
               </h2>
               <div id="accordionOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">Lemon drops chocolate cake gummies carrot cake chupa chups
-                  muffin topping. Sesame snaps icing marzipan gummi bears macaroon dragée danish
-                  caramels powder. Bear claw dragée pastry topping soufflé. Wafer gummi bears
-                  marshmallow pastry pie.</div>
+                <div class="accordion-body">Por supuesto que no, paga una vez la licencia.</div>
               </div>
             </div>
             <div class="card accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">Do
-                  I need to purchase a license for each website?</button>
+                  data-bs-target="#accordionTwo" aria-expanded="false" aria-controls="accordionTwo">¿Necesito comprar una licencia para cada sitio web?</button>
               </h2>
               <div id="accordionTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body">Dessert ice cream donut oat cake jelly-o pie sugar plum
-                  cheesecake. Bear claw dragée oat cake dragée ice cream halvah tootsie roll. Danish
-                  cake oat cake pie macaroon tart donut gummies. Jelly beans candy canes carrot cake.
-                  Fruitcake chocolate chupa chups.</div>
+                <div class="accordion-body">Solo en casos especiales.</div>
               </div>
             </div>
             <div class="card accordion-item active">
               <h2 class="accordion-header" id="headingThree">
                 <button type="button" class="accordion-button" data-bs-toggle="collapse"
-                  data-bs-target="#accordionThree" aria-expanded="false" aria-controls="accordionThree">What is regular
-                  license?</button>
+                  data-bs-target="#accordionThree" aria-expanded="false" aria-controls="accordionThree">¿Qué es una licencia regular?</button>
               </h2>
               <div id="accordionThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Regular license can be used for end products that do not charge users for access or
-                  service(access is free and there will be no monthly subscription fee). Single
-                  regular license can be used for single end product and end product can be used by
-                  you or your client. If you want to sell end product to multiple clients then you
-                  will need to purchase separate license for each client. The same rule applies if you
-                  want to use the same end product on multiple domains(unique setup).
-                  For more info on regular license you can check official description.
+                  La licencia regular se puede usar para productos finales que no cobran a los 
+                  usuarios por el acceso o el servicio (el acceso es gratuito y no hay cuota de suscripción mensual). 
+                  La licencia regular individual se puede usar para un solo producto final, y el producto final puede ser 
+                  utilizado por usted o su cliente. Si desea vender el producto final a varios clientes, deberá adquirir una 
+                  licencia independiente para cada uno. La misma regla se aplica si desea usar el mismo producto final en 
+                  varios dominios (configuración única). Para obtener más información sobre la licencia regular, consulte la descripción oficial.
                 </div>
               </div>
             </div>
             <div class="card accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#accordionFour" aria-expanded="false" aria-controls="accordionFour">What is extended
-                  license?</button>
+                  data-bs-target="#accordionFour" aria-expanded="false" aria-controls="accordionFour">¿Qué es una licencia extendida?</button>
               </h2>
               <div id="accordionFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nobis et aliquid quaerat possimus maxime! Mollitia reprehenderit neque repellat
-                  deleniti delectus architecto dolorum maxime, blanditiis earum ea, incidunt quam
-                  possimus cumque.</div>
+                <div class="accordion-body">Cuando tiene una licencia premium, dura mucho más tiempo.</div>
               </div>
             </div>
             <div class="card accordion-item">
               <h2 class="accordion-header" id="headingFive">
                 <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                  data-bs-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">Which license is
-                  applicable for SASS
-                  application?</button>
+                  data-bs-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">¿Qué licencia es aplicable para la aplicación SASS?</button>
               </h2>
               <div id="accordionFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sequi molestias exercitationem ab cum nemo facere voluptates veritatis quia, eveniet
-                  veniam at et repudiandae mollitia ipsam quasi labore enim architecto non!</div>
+                <div class="accordion-body">Solo las premium!</div>
               </div>
             </div>
           </div>
@@ -1227,9 +1144,9 @@
     <div class="container">
       <div class="row align-items-center gy-12">
         <div class="col-lg-6 text-start text-sm-center text-lg-start">
-          <h3 class="cta-title text-primary fw-bold mb-1">Ready to Get Started?</h3>
-          <h5 class="text-body mb-8">Start your project with a 14-day free trial</h5>
-          <a href="payment-page.html" class="btn btn-lg btn-primary">Get Started</a>
+          <h3 class="cta-title text-primary fw-bold mb-1">Listo para iniciar?</h3>
+          <h5 class="text-body mb-8">Pide tu proyecto</h5>
+          <a href="/" class="btn btn-lg btn-primary">Iniciar</a>
         </div>
         <div class="col-lg-6 pt-lg-12 text-center text-lg-end">
           <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/cta-dashboard.png" alt="cta dashboard"
@@ -1243,18 +1160,18 @@
   <section id="landingContact" class="section-py bg-body landing-contact">
     <div class="container">
       <div class="text-center mb-4">
-        <span class="badge bg-label-primary">Contact US</span>
+        <span class="badge bg-label-primary">Contáctenos</span>
       </div>
       <h4 class="text-center mb-1">
-        <span class="position-relative fw-extrabold z-1">Let's work
+        <span class="position-relative fw-extrabold z-1">Vamos a trabajar
 
           <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/icons/section-title-icon.png" alt="laptop charging"
             class="section-title-img position-absolute object-fit-contain bottom-0 z-n1" />
         </span>
-        together
+        juntos
 
       </h4>
-      <p class="text-center mb-12 pb-md-4">Any question or remark? just write us a message</p>
+      <p class="text-center mb-12 pb-md-4">¿Tienes alguna pregunta o comentario? Escríbenos.</p>
       <div class="row g-6">
         <div class="col-lg-5">
           <div class="contact-img-box position-relative border p-2 h-100">
@@ -1270,9 +1187,9 @@
                       <i class="icon-base bx bx-envelope icon-lg"></i>
                     </div>
                     <div>
-                      <p class="mb-0">Email</p>
+                      <p class="mb-0">Correo</p>
                       <h6 class="mb-0">
-                        <a href="mailto:example@gmail.com" class="text-heading">example@gmail.com</a>
+                        <a href="mailto:andres95liverpool@gmail.com" class="text-heading">andres95liverpool@gmail.com</a>
                       </h6>
                     </div>
                   </div>
@@ -1283,9 +1200,9 @@
                       <i class="icon-base bx bx-phone-call icon-lg"></i>
                     </div>
                     <div>
-                      <p class="mb-0">Phone</p>
+                      <p class="mb-0">Teléfono</p>
                       <h6 class="mb-0">
-                        <a href="tel:+1234-568-963" class="text-heading">+1234 568 963</a>
+                        <a href="tel:+59570932007" class="text-heading">+59570932007</a>
                       </h6>
                     </div>
                   </div>
@@ -1297,30 +1214,30 @@
         <div class="col-lg-7">
           <div class="card h-100">
             <div class="card-body">
-              <h4 class="mb-2">Send a message</h4>
+              <h4 class="mb-2">Envia un mensaje</h4>
               <p class="mb-6">
-                If you would like to discuss anything related to payment, account, licensing,
+                Si desea discutir cualquier tema relacionado con pagos, cuentas, licencias,
                 <br class="d-none d-lg-block" />
-                partnerships, or have pre-sales questions, you’re at the right place.
+                asociaciones o tiene preguntas previas a la venta, está en el lugar correcto.
 
               </p>
               <form>
                 <div class="row g-4">
                   <div class="col-md-6">
-                    <label class="form-label" for="contact-form-fullname">Full Name</label>
+                    <label class="form-label" for="contact-form-fullname">Nombre Completo</label>
                     <input type="text" class="form-control" id="contact-form-fullname" placeholder="john" />
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label" for="contact-form-email">Email</label>
+                    <label class="form-label" for="contact-form-email">Correo</label>
                     <input type="text" id="contact-form-email" class="form-control" placeholder="johndoe@gmail.com" />
                   </div>
                   <div class="col-12">
-                    <label class="form-label" for="contact-form-message">Message</label>
+                    <label class="form-label" for="contact-form-message">Mensaje</label>
                     <textarea id="contact-form-message" class="form-control" rows="11"
-                      placeholder="Write a message"></textarea>
+                      placeholder="Escribe tu mensaje o consulta"></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Send inquiry</button>
+                    <button type="submit" class="btn btn-primary">Enviar consulta</button>
                   </div>
                 </div>
               </form>
@@ -1343,112 +1260,34 @@
         <div class="col-lg-5">
           <a href="landing-page.html" class="app-brand-link mb-6">
             <span class="app-brand-logo demo">
-              <span class="text-primary">
-                <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <defs>
-                    <path
-                      d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
-                      id="path-1"></path>
-                    <path
-                      d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
-                      id="path-3"></path>
-                    <path
-                      d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
-                      id="path-4"></path>
-                    <path
-                      d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
-                      id="path-5"></path>
-                  </defs>
-                  <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
-                      <g id="Icon" transform="translate(27.000000, 15.000000)">
-                        <g id="Mask" transform="translate(0.000000, 8.000000)">
-                          <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                          </mask>
-                          <use fill="currentColor" xlink:href="#path-1"></use>
-                          <g id="Path-3" mask="url(#mask-2)">
-                            <use fill="currentColor" xlink:href="#path-3"></use>
-                            <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3">
-                            </use>
-                          </g>
-                          <g id="Path-4" mask="url(#mask-2)">
-                            <use fill="currentColor" xlink:href="#path-4"></use>
-                            <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4">
-                            </use>
-                          </g>
-                        </g>
-                        <g id="Triangle"
-                          transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
-                          <use fill="currentColor" xlink:href="#path-5"></use>
-                          <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </span>
+              @if (!empty($settingGeneral->site_logo))
+              <img width="40px" src="{{ asset('img_logo/' . $settingGeneral->site_logo)}}" alt="icon" />
+              @else
+              <img width="40px" src="" alt="icon" />
+              @endif
             </span>
-            <span class="app-brand-text demo text-white fw-bold ms-2 ps-1">sneat</span>
+            <span class="app-brand-text demo text-white fw-bold ms-2 ps-1">{{ $settingGeneral->site_title }}</span>
           </a>
-          <p class="footer-text footer-logo-description mb-6">Most developer friendly & highly customisable
-            Admin Dashboard Template.</p>
+          <p class="footer-text footer-logo-description mb-6">Muy fácil de usar para desarrolladores y altamente personalizable.
+            Plantilla de panel de administración.</p>
           <form class="footer-form">
-            <label for="footer-email" class="small">Subscribe to newsletter</label>
+            <label for="footer-email" class="small">Suscríbete al boletín informativo</label>
             <div class="d-flex mt-1">
               <input type="email" class="form-control rounded-0 rounded-start-bottom rounded-start-top"
-                id="footer-email" placeholder="Your email" />
+                id="footer-email" placeholder="Tu correo" />
               <button type="submit"
-                class="btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top">Subscribe</button>
+                class="btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top">Suscribir</button>
             </div>
           </form>
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6">
-          <h6 class="footer-title mb-6">Demos</h6>
-          <ul class="list-unstyled">
-            <li class="mb-4">
-              <a href="../vertical-menu-template/" target="_blank" class="footer-link">Vertical Layout</a>
-            </li>
-            <li class="mb-4">
-              <a href="../horizontal-menu-template/" target="_blank" class="footer-link">Horizontal Layout</a>
-            </li>
-            <li class="mb-4">
-              <a href="../vertical-menu-template-bordered/" target="_blank" class="footer-link">Bordered Layout</a>
-            </li>
-            <li class="mb-4">
-              <a href="../vertical-menu-template-semi-dark/" target="_blank" class="footer-link">Semi Dark Layout</a>
-            </li>
-            <li>
-              <a href="../vertical-menu-template-dark/" target="_blank" class="footer-link">Dark Layout</a>
-            </li>
-          </ul>
+          <h6 class="footer-title mb-6">Demos</h6>          
         </div>
         <div class="col-lg-2 col-md-4 col-sm-6">
-          <h6 class="footer-title mb-6">Pages</h6>
-          <ul class="list-unstyled">
-            <li class="mb-4">
-              <a href="pricing-page.html" class="footer-link">Pricing</a>
-            </li>
-            <li class="mb-4">
-              <a href="payment-page.html" class="footer-link">Payment
-                <span class="badge bg-primary ms-2">New</span>
-              </a>
-            </li>
-            <li class="mb-4">
-              <a href="checkout-page.html" class="footer-link">Checkout</a>
-            </li>
-            <li class="mb-4">
-              <a href="help-center-landing.html" class="footer-link">Help Center</a>
-            </li>
-            <li>
-              <a href="../vertical-menu-template/auth-login-cover.html" target="_blank"
-                class="footer-link">Login/Register</a>
-            </li>
-          </ul>
+          <h6 class="footer-title mb-6">Documentación</h6>
         </div>
         <div class="col-lg-3 col-md-4">
-          <h6 class="footer-title mb-6">Download our app</h6>
+          <h6 class="footer-title mb-6">Descargar App</h6>
           <a href="javascript:void(0);" class="d-block mb-4">
             <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/front-pages/landing-page/apple-icon.png" alt="apple icon" />
           </a>
@@ -1468,8 +1307,8 @@
             document.write(new Date().getFullYear());
           </script>
         </span>
-        <a href="https://themeselection.com" target="_blank" class="text-white">ThemeSelection,</a>
-        <span class="footer-bottom-text"> Made with ❤️ for a better web.</span>
+        <a href="/" target="_blank" class="text-white">{{ $settingGeneral->site_title }},</a>
+        <span class="footer-bottom-text"> equipo de desarrollo.</span>
       </div>
       <div>
         <a href="https://github.com/themeselection" class="me-4 text-white" target="_blank">
@@ -1479,21 +1318,21 @@
               fill="currentColor" />
           </svg>
         </a>
-        <a href="https://www.facebook.com/ThemeSelections/" class="me-4 text-white" target="_blank">
+        <a href="#" class="me-4 text-white" target="_blank">
           <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M11.8609 18.0262V11.1962H14.1651L14.5076 8.52204H11.8609V6.81871C11.8609 6.04704 12.0759 5.51871 13.1834 5.51871H14.5868V3.13454C13.904 3.06136 13.2176 3.02603 12.5309 3.02871C10.4943 3.02871 9.09593 4.27204 9.09593 6.55454V8.51704H6.80676V11.1912H9.10093V18.0262H11.8609Z"
               fill="currentColor" />
           </svg>
         </a>
-        <a href="https://x.com/Theme_Selection" class="me-4 text-white" target="_blank">
+        <a href="#" class="me-4 text-white" target="_blank">
           <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M17.0576 7.19293C17.0684 7.33876 17.0684 7.48376 17.0684 7.62876C17.0684 12.0663 13.6909 17.1796 7.5184 17.1796C5.61674 17.1796 3.85007 16.6288 2.3634 15.6721C2.6334 15.7029 2.8934 15.7138 3.17424 15.7138C4.68506 15.7174 6.15311 15.2122 7.34174 14.2796C6.64125 14.2669 5.96222 14.0358 5.39943 13.6185C4.83665 13.2013 4.41822 12.6187 4.20257 11.9521C4.41007 11.9829 4.6184 12.0038 4.83674 12.0038C5.13757 12.0038 5.44007 11.9621 5.7209 11.8896C4.9607 11.7361 4.27713 11.3241 3.78642 10.7235C3.29571 10.1229 3.02815 9.37097 3.02924 8.59543V8.55376C3.47674 8.80293 3.9959 8.95876 4.5459 8.9796C4.08514 8.67342 3.70734 8.25795 3.44619 7.77026C3.18504 7.28256 3.04866 6.73781 3.04924 6.1846C3.04924 5.56126 3.21507 4.9896 3.5059 4.49126C4.34935 5.52878 5.40132 6.37756 6.59368 6.98265C7.78604 7.58773 9.0922 7.93561 10.4276 8.00376C10.3759 7.75376 10.3442 7.4946 10.3442 7.2346C10.344 6.79373 10.4307 6.35715 10.5993 5.9498C10.7679 5.54245 11.0152 5.17233 11.3269 4.86059C11.6386 4.54885 12.0088 4.30161 12.4161 4.133C12.8235 3.96438 13.26 3.87771 13.7009 3.87793C14.6676 3.87793 15.5401 4.28293 16.1534 4.93793C16.9049 4.79261 17.6255 4.51828 18.2834 4.1271C18.0329 4.90278 17.5082 5.56052 16.8076 5.9771C17.4741 5.90108 18.1254 5.72581 18.7401 5.4571C18.281 6.12635 17.7122 6.71322 17.0576 7.19293Z"
               fill="currentColor" />
           </svg>
         </a>
-        <a href="https://www.instagram.com/themeselection/" class="text-white" target="_blank">
+        <a href="#" class="text-white" target="_blank">
           <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_1833_185630)">
               <path
